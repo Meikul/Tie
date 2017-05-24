@@ -1,0 +1,44 @@
+body{
+  background: #efefef;
+  /*background: black;*/
+}
+
+#vector{
+  height: 25vw;
+  width: 10vw;
+  position: absolute;
+  left: 44vw;
+  top: 3vw;
+}
+
+#title{
+  position: fixed;
+  width: 98vw;
+  height: 25vw;
+  left: 1vw;
+  top: 20vh;
+  text-align: center;
+  background: #cdf;
+  font-family: 'Slabo 27px', serif;
+  font-size: 30vw;
+}
+
+#vecPath {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: dash 1.5s ease-in-out forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#spacer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 5000px;
+  width: 1px;
+}
